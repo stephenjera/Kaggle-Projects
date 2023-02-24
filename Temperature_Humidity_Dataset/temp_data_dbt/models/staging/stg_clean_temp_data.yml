@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_clean_temp_data
+    columns:
+      - name: id
+        description: TODO   
+      - name: date
+        description: TODO
+      - name: year
+        description: TODO
+      - name: month
+        description: TODO
+      - name: day
+        description: TODO
+      - name: time
+        description: TODO
+      - name: temperature 
+        description: TODO
+      - name: humidity
+        description: TODO
+        tests:
+          - is_greater_than:
+              config:
+                severity: warn
+
+  

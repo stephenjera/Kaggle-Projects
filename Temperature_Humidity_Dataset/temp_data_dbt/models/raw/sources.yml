@@ -1,9 +1,30 @@
 version: 2
 
 sources:
- - name: public
+ - name: public 
    database: postgres
    schema: public
    tables:
     - name: temp_data
- 
+      columns:
+        - name: id
+          description: TODO
+          tests:
+            - not_null:
+                config:
+                  store_failures: true
+                  severity: warn
+        - name: date
+          description: TODO
+        - name: year
+          description: TODO
+        - name: month
+          description: TODO
+        - name: day
+          description: TODO
+        - name: time
+          description: TODO
+        - name: temperature 
+          description: TODO
+        - name: humidity
+          description: TODO
