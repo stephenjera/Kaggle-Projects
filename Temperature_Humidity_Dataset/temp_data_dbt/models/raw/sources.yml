@@ -6,6 +6,10 @@ sources:
    schema: public
    tables:
     - name: temp_data
+      loaded_at_field: date
+      freshness:
+        warn_after: {count: 12, period: hour}
+        #error_after: {count: 24, period: hour}
       columns:
         - name: id
           description: TODO
